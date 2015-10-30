@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeStatusFetcher.Core", "TubeStatusFetcher.Core\TubeStatusFetcher.Core.csproj", "{356B8D45-A7EF-4C3E-A408-53C6EE74BAC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeStatusFetcher.UI.WPF", "TubeStatusFetcher.UI.WPF\TubeStatusFetcher.UI.WPF.csproj", "{47FA1C9F-1FAE-4207-B3DA-5324224FB99A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TubeStatusFetcher.UI.Console", "TubeStatusFetcher.UI.Console\TubeStatusFetcher.UI.Console.csproj", "{1943D5C0-5B86-49B7-89B5-B1B3F07F5062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{356B8D45-A7EF-4C3E-A408-53C6EE74BAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356B8D45-A7EF-4C3E-A408-53C6EE74BAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356B8D45-A7EF-4C3E-A408-53C6EE74BAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356B8D45-A7EF-4C3E-A408-53C6EE74BAC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47FA1C9F-1FAE-4207-B3DA-5324224FB99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FA1C9F-1FAE-4207-B3DA-5324224FB99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FA1C9F-1FAE-4207-B3DA-5324224FB99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FA1C9F-1FAE-4207-B3DA-5324224FB99A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1943D5C0-5B86-49B7-89B5-B1B3F07F5062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1943D5C0-5B86-49B7-89B5-B1B3F07F5062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1943D5C0-5B86-49B7-89B5-B1B3F07F5062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1943D5C0-5B86-49B7-89B5-B1B3F07F5062}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

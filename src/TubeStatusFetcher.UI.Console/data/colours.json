@@ -1,0 +1,13 @@
+﻿[
+    { "id": "bakerloo", "colour": { "M": 58, "Y": 100, "K": 33 } },
+    { "id": "central", "colour": { "M": 95, "Y": 100 } },
+    { "id": "circle",  "colour": { "M": 16, "Y": 100 } },
+    { "id": "district", "colour": { "C":  95, "Y": 100, "K": 27 } },
+    { "id": "hammersmith-city", "colour": { "M": 45, "Y": 10 } },
+    { "id": "jubilee", "colour": { "C": 5, "K": 45 } },
+    { "id": "metropolitan", "colour": { "C": 5, "M": 100, "K": 40 } },
+    { "id": "northern", "colour": { "K": 100 } },
+    { "id": "piccadilly", "colour": { "C": 100, "M": 88, "K": 5 } },
+    { "id": "victoria", "colour": { "C": 85, "M": 19 } },
+    { "id": "waterloo-city", "colour": { "C": 47, "Y": 32 } }
+]
