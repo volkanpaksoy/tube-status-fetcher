@@ -1,4 +1,5 @@
-﻿using TubeStatusFetcher.Core;
+﻿using System;
+using TubeStatusFetcher.Core;
 
 namespace TubeStatusFetcher.UI.Console
 {
@@ -6,8 +7,13 @@ namespace TubeStatusFetcher.UI.Console
     {
         static void Main(string[] args)
         {
-            var tsf = new Fetcher();
-            tsf.GetTubeInfo();
+            System.Console.WriteLine("");
+
+            var viewer = new Viewer();
+
+            System.Console.WriteLine("Press F5 to refresh the results");
+
+
         }
     }
 }

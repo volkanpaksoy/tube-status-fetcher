@@ -21,24 +21,12 @@ namespace TubeStatusFetcher.Core
         {
             InitTubeColors();
             InitConsoleColors();
-            InitSeverityInfo();
 
             var tflResponse = GetData();
 
             DisplayTubeStatus(tflResponse);
 
             Console.ReadLine();
-        }
-
-        private void InitSeverityInfo()
-        {
-            _severityDescriptionMap = new Dictionary<int, string>();
-            string json = File.ReadAllText("./data/status.json");
-            var statusCodes = JArray.Parse(json);
-            foreach (var status in statusCodes.Where(s => s["modeName"].Value<string>() == "tube"))
-            {
-                _severityDescriptionMap.Add(status["severityLevel"].Value<int>(), status["description"].Value<string>());
-            }
         }
 
         private void InitTubeColors()
