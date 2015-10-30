@@ -13,9 +13,7 @@ namespace TubeStatusFetcher.UI.Console
             do
             {
                 viewer.DisplayTubeStatus(fetcher.GetTubeInfo());
-
                 System.Console.WriteLine("Press F5 to refresh the results, Q to quit");
-
             }
             while (System.Console.ReadKey().Key == ConsoleKey.F5);
         }
