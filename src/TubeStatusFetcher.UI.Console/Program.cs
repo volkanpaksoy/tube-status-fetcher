@@ -7,13 +7,17 @@ namespace TubeStatusFetcher.UI.Console
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("");
-
+            var fetcher = new Fetcher();
             var viewer = new Viewer();
 
-            System.Console.WriteLine("Press F5 to refresh the results");
+            do
+            {
+                viewer.DisplayTubeStatus(fetcher.GetTubeInfo());
 
+                System.Console.WriteLine("Press F5 to refresh the results, Q to quit");
 
+            }
+            while (System.Console.ReadKey().Key == ConsoleKey.F5);
         }
     }
 }

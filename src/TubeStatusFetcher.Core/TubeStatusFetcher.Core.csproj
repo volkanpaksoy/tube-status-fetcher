@@ -56,12 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ColourHelper.cs" />
-    <Compile Include="IColourProvider.cs" />
     <Compile Include="LineInfo.cs" />
     <Compile Include="LineStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TflResponse.cs" />
-    <Compile Include="TubeStatusFetcher.cs" />
+    <Compile Include="Fetcher.cs" />
+    <Compile Include="TubeColourHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
