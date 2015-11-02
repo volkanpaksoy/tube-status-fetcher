@@ -12,6 +12,8 @@
 		E71B6EEA1BE7EF8300520507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EE81BE7EF8300520507 /* Main.storyboard */; };
 		E71B6EEC1BE7EF8300520507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EEB1BE7EF8300520507 /* Assets.xcassets */; };
 		E71B6EEF1BE7EF8300520507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EED1BE7EF8300520507 /* LaunchScreen.storyboard */; };
+		E760B21E1BE7F55B0014D61B /* TFLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760B21C1BE7F55B0014D61B /* TFLClient.swift */; };
+		E760B21F1BE7F55B0014D61B /* TFLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760B21D1BE7F55B0014D61B /* TFLConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E71B6EEB1BE7EF8300520507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71B6EEE1BE7EF8300520507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71B6EF01BE7EF8300520507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E760B21C1BE7F55B0014D61B /* TFLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLClient.swift; sourceTree = "<group>"; };
+		E760B21D1BE7F55B0014D61B /* TFLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		E71B6EE31BE7EF8300520507 /* TubeStatusFetcher.UI.Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E760B2191BE7F49C0014D61B /* Assets */,
+				E7CA8E181BE7F39C00CF56B3 /* Controller */,
+				E7CA8E171BE7F38D00CF56B3 /* Model */,
 				E71B6EE41BE7EF8300520507 /* AppDelegate.swift */,
-				E71B6EE61BE7EF8300520507 /* ViewController.swift */,
 				E71B6EE81BE7EF8300520507 /* Main.storyboard */,
-				E71B6EEB1BE7EF8300520507 /* Assets.xcassets */,
 				E71B6EED1BE7EF8300520507 /* LaunchScreen.storyboard */,
 				E71B6EF01BE7EF8300520507 /* Info.plist */,
 			);
 			path = TubeStatusFetcher.UI.Swift;
+			sourceTree = "<group>";
+		};
+		E760B2191BE7F49C0014D61B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E71B6EEB1BE7EF8300520507 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		E7CA8E171BE7F38D00CF56B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E760B21C1BE7F55B0014D61B /* TFLClient.swift */,
+				E760B21D1BE7F55B0014D61B /* TFLConstants.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E7CA8E181BE7F39C00CF56B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E71B6EE61BE7EF8300520507 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E760B21F1BE7F55B0014D61B /* TFLConstants.swift in Sources */,
 				E71B6EE71BE7EF8300520507 /* ViewController.swift in Sources */,
 				E71B6EE51BE7EF8300520507 /* AppDelegate.swift in Sources */,
+				E760B21E1BE7F55B0014D61B /* TFLClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +318,7 @@
 				E71B6EF51BE7EF8300520507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

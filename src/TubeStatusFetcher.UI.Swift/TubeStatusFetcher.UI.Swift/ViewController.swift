@@ -10,14 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let apiEndPoint = "https://api.tfl.gov.uk/line/mode/tube/status?detail=true"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        
+        
     }
 
 
