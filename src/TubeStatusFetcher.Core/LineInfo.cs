@@ -15,5 +15,6 @@ namespace TubeStatusFetcher.Core
         public int StatusSeverity { get; set; }
         public string StatusSeverityDescription { get; set; }
         public string Reason { get; set; }
+        public Color Displaycolour { get; set; }
     }
 }
