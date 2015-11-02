@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="TubeStatusFetcher.Core/TubeStatusFetcher.Core.csproj">
+  <DisabledProjects>
+    <String>TubeStatusFetcher.UI.Console/TubeStatusFetcher.UI.Console.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TubeStatusFetcher.Core/TflResponse.cs">
+    <Files>
+      <File FileName="TubeStatusFetcher.Core/TflResponse.cs" Line="4" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/volkan/Documents/Projects/GitHub/volkanx/tube-status-fetcher/src/TubeStatusFetcher.Core/TflResponse.cs" line="1" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
