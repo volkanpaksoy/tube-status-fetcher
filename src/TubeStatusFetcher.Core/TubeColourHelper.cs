@@ -10,34 +10,49 @@ namespace TubeStatusFetcher.Core
 {
     public class TubeColourHelper
     {
-        private static Dictionary<string, CMYK> _tubeColorDictionary = new Dictionary<string, CMYK>();
+        private static Dictionary<string, CMYK> _tubeColorCMYKDictionary = new Dictionary<string, CMYK>();
+        private static Dictionary<string, RGB> _tubeColorRGBDictionary = new Dictionary<string, RGB>();
 
         static TubeColourHelper()
         {
-            _tubeColorDictionary = new Dictionary<string, CMYK>();
+            _tubeColorCMYKDictionary = new Dictionary<string, CMYK>();
+            _tubeColorRGBDictionary = new Dictionary<string, RGB>();
+
             string json = File.ReadAllText("./data/colours.json");
             var tubeColors = JArray.Parse(json);
             foreach (var tubeColor in tubeColors)
             {
-                var colour = new CMYK(
-                    tubeColor["colour"]["C"]?.Value<double>() ?? 0.0,
-                    tubeColor["colour"]["M"]?.Value<double>() ?? 0.0,
-                    tubeColor["colour"]["Y"]?.Value<double>() ?? 0.0,
-                    tubeColor["colour"]["K"]?.Value<double>() ?? 0.0);
+                _tubeColorCMYKDictionary.Add(tubeColor["id"].Value<string>(), new CMYK(
+                    tubeColor["CMYK"]["C"]?.Value<double>() ?? 0.0,
+                    tubeColor["CMYK"]["M"]?.Value<double>() ?? 0.0,
+                    tubeColor["CMYK"]["Y"]?.Value<double>() ?? 0.0,
+                    tubeColor["CMYK"]["K"]?.Value<double>() ?? 0.0));
 
-                _tubeColorDictionary.Add(tubeColor["id"].Value<string>(), colour);
+                _tubeColorRGBDictionary.Add(tubeColor["id"].Value<string>(), new RGB(
+                    tubeColor["RGB"]["R"]?.Value<int>() ?? 0,
+                    tubeColor["RGB"]["G"]?.Value<int>() ?? 0,
+                    tubeColor["RGB"]["B"]?.Value<int>() ?? 0));
             }
         }
-
-        public static CMYK GetLineColour(string lineId)
+        
+        public static CMYK GetCMYKColour(string lineId)
         {
-            if (!_tubeColorDictionary.ContainsKey(lineId))
+            if (!_tubeColorCMYKDictionary.ContainsKey(lineId))
             {
-                throw new ArgumentException($"Colour for line [{lineId}] could not be found in color map");
+                throw new ArgumentException($"Colour for line [{lineId}] could not be found in CMYK colour map");
             }
 
-            return _tubeColorDictionary[lineId];
+            return _tubeColorCMYKDictionary[lineId];
         }
 
+        public static RGB GetRGBColour(string lineId)
+        {
+            if (!_tubeColorRGBDictionary.ContainsKey(lineId))
+            {
+                throw new ArgumentException($"Colour for line [{lineId}] could not be found in RGB colour map");
+            }
+
+            return _tubeColorRGBDictionary[lineId];
+        }
     }
 }

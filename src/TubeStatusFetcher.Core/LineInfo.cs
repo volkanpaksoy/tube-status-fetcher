@@ -11,10 +11,9 @@ namespace TubeStatusFetcher.Core
     {
         public string Id { get; set; }
         public string Name { get; set; }
-        public CMYK LineColour { get; set; }
+        public RGB LineColour { get; set; }
         public int StatusSeverity { get; set; }
         public string StatusSeverityDescription { get; set; }
         public string Reason { get; set; }
-        public Color Displaycolour { get; set; }
     }
 }

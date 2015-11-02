@@ -55,7 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ColourHelper.cs" />
+    <Compile Include="CMYK.cs" />
+    <Compile Include="LineColour.cs" />
+    <Compile Include="RGB.cs" />
     <Compile Include="LineInfo.cs" />
     <Compile Include="LineStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
