@@ -22,6 +22,7 @@ namespace TubeStatusFetcher.UI.WPF
     public partial class MainWindow : Window
     {
         private Dictionary<string, Color> _tubeColourDictionary;
+
         Fetcher _fetcher;
 
         public MainWindow()
@@ -72,8 +73,12 @@ namespace TubeStatusFetcher.UI.WPF
            
             foreach (var lineInfo in tubeStatus)
             {
-                statusListView.Items.Add(lineInfo);
+                statusListView.Items.Add(new WpfColourDecorator(lineInfo));
+
             }
+
+            // new ListViewItem().Foreground
+
         }
     }
 }

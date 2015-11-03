@@ -11,6 +11,7 @@ namespace TubeStatusFetcher.UI.Console
     {
         private Dictionary<string, ConsoleColor> _tubeBGColourDictionary;
         private Dictionary<string, ConsoleColor> _tubeFGColourDictionary;
+
         public ConsoleViewer()
         {
             InitColours();

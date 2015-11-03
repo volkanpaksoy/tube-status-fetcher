@@ -10,14 +10,15 @@
         <ListView x:Name="statusListView" HorizontalAlignment="Left" Height="280" Margin="0,10,0,0" VerticalAlignment="Top" Width="507">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Line" Width="150" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Header="Status" Width="100" DisplayMemberBinding="{Binding StatusSeverityDescription}"/>
-                    <GridViewColumn Header="Reason" Width="200" DisplayMemberBinding="{Binding Reason}"/>
+                    <GridViewColumn Header="Line" Width="150" DisplayMemberBinding="{Binding LineInfo.Name}" />
+                    <GridViewColumn Header="Status" Width="100" DisplayMemberBinding="{Binding LineInfo.StatusSeverityDescription}"/>
+                    <GridViewColumn Header="Reason" Width="200" DisplayMemberBinding="{Binding LineInfo.Reason}"/>
                 </GridView>
             </ListView.View>
             <ListView.Resources>
                 <Style TargetType="{x:Type ListViewItem}">
-                    <Setter Property="Background" Value="{Binding }" />
+                    <Setter Property="Background" Value="{Binding BackColour}" />
+                    <Setter Property="Foreground" Value="{Binding ForeColour}" />
                 </Style>
             </ListView.Resources>
         </ListView>
