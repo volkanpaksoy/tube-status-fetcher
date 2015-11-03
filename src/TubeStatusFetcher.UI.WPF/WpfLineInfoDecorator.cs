@@ -8,11 +8,11 @@ using TubeStatusFetcher.Core;
 
 namespace TubeStatusFetcher.UI.WPF
 {
-    public class WpfColourDecorator
+    public class WpfLineInfoDecorator
     {
         public LineInfo LineInfo { get; set; }
 
-        public WpfColourDecorator(LineInfo lineInfo)
+        public WpfLineInfoDecorator(LineInfo lineInfo)
         {
             LineInfo = lineInfo;
         }

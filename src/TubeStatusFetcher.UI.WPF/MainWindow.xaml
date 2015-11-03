@@ -12,7 +12,7 @@
                 <GridView>
                     <GridViewColumn Header="Line" Width="150" DisplayMemberBinding="{Binding LineInfo.Name}" />
                     <GridViewColumn Header="Status" Width="100" DisplayMemberBinding="{Binding LineInfo.StatusSeverityDescription}"/>
-                    <GridViewColumn Header="Reason" Width="200" DisplayMemberBinding="{Binding LineInfo.Reason}"/>
+                    <GridViewColumn Header="Reason" Width="200" DisplayMemberBinding="{Binding LineInfo.Reason}" />
                 </GridView>
             </ListView.View>
             <ListView.Resources>
