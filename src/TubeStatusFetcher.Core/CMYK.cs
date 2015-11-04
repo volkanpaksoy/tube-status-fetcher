@@ -9,7 +9,8 @@ namespace TubeStatusFetcher.Core
     /// <summary>
     /// Structure to define CMYK.
     /// </summary>
-    // // Taken from: http://www.codeproject.com/Articles/19045/Manipulating-colors-in-NET-Part
+    // Taken from: http://www.codeproject.com/Articles/19045/Manipulating-colors-in-NET-Part
+    // Currently unused - Can be deleted if RGB works fine on all platforms
     public struct CMYK
     {
         /// <summary>
