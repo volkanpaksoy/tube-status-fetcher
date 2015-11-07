@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
@@ -74,14 +80,41 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="..\Core\RGB.cs">
+      <Link>Core\RGB.cs</Link>
     </Compile>
+    <Compile Include="..\Core\CMYK.cs">
+      <Link>Core\CMYK.cs</Link>
+    </Compile>
+    <Compile Include="..\Core\LineColour.cs">
+      <Link>Core\LineColour.cs</Link>
+    </Compile>
+    <Compile Include="..\Core\LineInfo.cs">
+      <Link>Core\LineInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Core\LineStatus.cs">
+      <Link>Core\LineStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Core\Fetcher.cs">
+      <Link>Core\Fetcher.cs</Link>
+    </Compile>
+    <Compile Include="..\Core\TflResponse.cs">
+      <Link>Core\TflResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\Core\TubeColourHelper.cs">
+      <Link>Core\TubeColourHelper.cs</Link>
+    </Compile>
+    <Compile Include="TubeStatusTableViewControllerController.cs" />
+    <Compile Include="TubeStatusTableViewControllerCell.cs" />
+    <Compile Include="TubeStatusTableViewControllerSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
 </Project>

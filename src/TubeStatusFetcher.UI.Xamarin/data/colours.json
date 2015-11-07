@@ -1,0 +1,13 @@
+﻿[
+    { "id": "bakerloo", "CMYK": { "M": 58, "Y": 100, "K": 33 }, "RGB":  { "R": 137, "G": 78, "B": 36 } },
+    { "id": "central", "CMYK": { "M": 95, "Y": 100 }, "RGB":  { "R": 220, "G": 36, "B": 31 } },
+    { "id": "circle",  "CMYK": { "M": 16, "Y": 100 }, "RGB":  { "R": 255, "G": 206, "B": 0 } },
+    { "id": "district", "CMYK": { "C":  95, "Y": 100, "K": 27 }, "RGB":  { "R": 0, "G": 114, "B": 41 } },
+    { "id": "hammersmith-city", "CMYK": { "M": 45, "Y": 10 }, "RGB":  { "R": 215, "G": 153, "B": 175 } },
+    { "id": "jubilee", "CMYK": { "C": 5, "K": 45 }, "RGB":  { "R": 134, "G": 143, "B": 152 } },
+    { "id": "metropolitan", "CMYK": { "C": 5, "M": 100, "K": 40 }, "RGB":  { "R": 117, "G": 16, "B": 86 } },
+    { "id": "northern", "CMYK": { "K": 100 }, "RGB":  { "R": 0, "G": 0, "B": 0 } },
+    { "id": "piccadilly", "CMYK": { "C": 100, "M": 88, "K": 5 }, "RGB":  { "R": 0, "G": 25, "B": 168 } },
+    { "id": "victoria", "CMYK": { "C": 85, "M": 19 }, "RGB":  { "R": 0, "G": 160, "B": 226 } },
+    { "id": "waterloo-city", "CMYK": { "C": 47, "Y": 32 }, "RGB":  { "R": 118, "G": 208, "B": 189 } }
+]
