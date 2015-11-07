@@ -12,12 +12,13 @@ extension TFLClient {
 
     struct Constants {
         static let BaseURL : String = "https://api.tfl.gov.uk"
-        
+        // static let ApiEndPoint = "https://api.tfl.gov.uk/line/mode/tube/status?detail=true"
+   
     }
     
     
     struct Methods {
-        static let TubeStatus = "/line/mode/tube/status?detail=true"
+        static let TubeStatus = "/line/mode/tube/status"
         
     }
     
