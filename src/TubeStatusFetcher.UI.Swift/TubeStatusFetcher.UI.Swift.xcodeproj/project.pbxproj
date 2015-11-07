@@ -8,26 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		E71B6EE51BE7EF8300520507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B6EE41BE7EF8300520507 /* AppDelegate.swift */; };
-		E71B6EE71BE7EF8300520507 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B6EE61BE7EF8300520507 /* ViewController.swift */; };
 		E71B6EEA1BE7EF8300520507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EE81BE7EF8300520507 /* Main.storyboard */; };
 		E71B6EEC1BE7EF8300520507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EEB1BE7EF8300520507 /* Assets.xcassets */; };
 		E71B6EEF1BE7EF8300520507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EED1BE7EF8300520507 /* LaunchScreen.storyboard */; };
 		E75859B11BEE15A9003863D0 /* TFLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75859B01BEE15A9003863D0 /* TFLConfig.swift */; };
-		E760B21E1BE7F55B0014D61B /* TFLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760B21C1BE7F55B0014D61B /* TFLClient.swift */; };
-		E760B21F1BE7F55B0014D61B /* TFLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760B21D1BE7F55B0014D61B /* TFLConstants.swift */; };
+		E7BDBA791BEE38340027EF6F /* TFLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA771BEE38340027EF6F /* TFLClient.swift */; };
+		E7BDBA7A1BEE38340027EF6F /* TFLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA781BEE38340027EF6F /* TFLConstants.swift */; };
+		E7BDBA7C1BEE3B9F0027EF6F /* TubeStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA7B1BEE3B9F0027EF6F /* TubeStatusViewController.swift */; };
+		E7BDBA7E1BEE3EFA0027EF6F /* LineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA7D1BEE3EFA0027EF6F /* LineInfo.swift */; };
+		E7BDBA801BEE3F590027EF6F /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA7F1BEE3F590027EF6F /* RGB.swift */; };
+		E7BDBA831BEE42090027EF6F /* TubeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA821BEE42090027EF6F /* TubeInfoTableViewCell.swift */; };
+		E7BDBA851BEE635B0027EF6F /* TFLConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA841BEE635B0027EF6F /* TFLConvenience.swift */; };
+		E7BDBA871BEE7FCD0027EF6F /* TubeColourHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA861BEE7FCD0027EF6F /* TubeColourHelper.swift */; };
+		E7BDBA8D1BEE87A30027EF6F /* colour.json in Resources */ = {isa = PBXBuildFile; fileRef = E7BDBA8C1BEE87A30027EF6F /* colour.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E71B6EE11BE7EF8300520507 /* TubeStatusFetcher.UI.Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TubeStatusFetcher.UI.Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71B6EE41BE7EF8300520507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E71B6EE61BE7EF8300520507 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E71B6EE91BE7EF8300520507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E71B6EEB1BE7EF8300520507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71B6EEE1BE7EF8300520507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71B6EF01BE7EF8300520507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E75859B01BEE15A9003863D0 /* TFLConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TFLConfig.swift; path = Model/TFLConfig.swift; sourceTree = "<group>"; };
-		E760B21C1BE7F55B0014D61B /* TFLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLClient.swift; sourceTree = "<group>"; };
-		E760B21D1BE7F55B0014D61B /* TFLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLConstants.swift; sourceTree = "<group>"; };
+		E7BDBA771BEE38340027EF6F /* TFLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TFLClient.swift; path = Model/TFLClient.swift; sourceTree = "<group>"; };
+		E7BDBA781BEE38340027EF6F /* TFLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TFLConstants.swift; path = Model/TFLConstants.swift; sourceTree = "<group>"; };
+		E7BDBA7B1BEE3B9F0027EF6F /* TubeStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TubeStatusViewController.swift; path = Controller/TubeStatusViewController.swift; sourceTree = "<group>"; };
+		E7BDBA7D1BEE3EFA0027EF6F /* LineInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineInfo.swift; path = Model/LineInfo.swift; sourceTree = "<group>"; };
+		E7BDBA7F1BEE3F590027EF6F /* RGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RGB.swift; path = Model/RGB.swift; sourceTree = "<group>"; };
+		E7BDBA821BEE42090027EF6F /* TubeInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TubeInfoTableViewCell.swift; path = View/TubeInfoTableViewCell.swift; sourceTree = "<group>"; };
+		E7BDBA841BEE635B0027EF6F /* TFLConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TFLConvenience.swift; path = Model/TFLConvenience.swift; sourceTree = "<group>"; };
+		E7BDBA861BEE7FCD0027EF6F /* TubeColourHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TubeColourHelper.swift; path = Model/TubeColourHelper.swift; sourceTree = "<group>"; };
+		E7BDBA8C1BEE87A30027EF6F /* colour.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colour.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 		E71B6EE31BE7EF8300520507 /* TubeStatusFetcher.UI.Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E7BDBA811BEE41D00027EF6F /* View */,
 				E760B2191BE7F49C0014D61B /* Assets */,
 				E7CA8E181BE7F39C00CF56B3 /* Controller */,
 				E7CA8E171BE7F38D00CF56B3 /* Model */,
@@ -74,17 +87,30 @@
 		E760B2191BE7F49C0014D61B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				E7BDBA8C1BEE87A30027EF6F /* colour.json */,
 				E71B6EEB1BE7EF8300520507 /* Assets.xcassets */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		E7BDBA811BEE41D00027EF6F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7BDBA821BEE42090027EF6F /* TubeInfoTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E7CA8E171BE7F38D00CF56B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E760B21C1BE7F55B0014D61B /* TFLClient.swift */,
-				E760B21D1BE7F55B0014D61B /* TFLConstants.swift */,
+				E7BDBA771BEE38340027EF6F /* TFLClient.swift */,
+				E7BDBA781BEE38340027EF6F /* TFLConstants.swift */,
 				E75859B01BEE15A9003863D0 /* TFLConfig.swift */,
+				E7BDBA7D1BEE3EFA0027EF6F /* LineInfo.swift */,
+				E7BDBA7F1BEE3F590027EF6F /* RGB.swift */,
+				E7BDBA841BEE635B0027EF6F /* TFLConvenience.swift */,
+				E7BDBA861BEE7FCD0027EF6F /* TubeColourHelper.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -92,7 +118,7 @@
 		E7CA8E181BE7F39C00CF56B3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E71B6EE61BE7EF8300520507 /* ViewController.swift */,
+				E7BDBA7B1BEE3B9F0027EF6F /* TubeStatusViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -158,6 +184,7 @@
 				E71B6EEF1BE7EF8300520507 /* LaunchScreen.storyboard in Resources */,
 				E71B6EEC1BE7EF8300520507 /* Assets.xcassets in Resources */,
 				E71B6EEA1BE7EF8300520507 /* Main.storyboard in Resources */,
+				E7BDBA8D1BEE87A30027EF6F /* colour.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,11 +195,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E760B21F1BE7F55B0014D61B /* TFLConstants.swift in Sources */,
-				E71B6EE71BE7EF8300520507 /* ViewController.swift in Sources */,
 				E71B6EE51BE7EF8300520507 /* AppDelegate.swift in Sources */,
-				E760B21E1BE7F55B0014D61B /* TFLClient.swift in Sources */,
 				E75859B11BEE15A9003863D0 /* TFLConfig.swift in Sources */,
+				E7BDBA7A1BEE38340027EF6F /* TFLConstants.swift in Sources */,
+				E7BDBA7C1BEE3B9F0027EF6F /* TubeStatusViewController.swift in Sources */,
+				E7BDBA801BEE3F590027EF6F /* RGB.swift in Sources */,
+				E7BDBA851BEE635B0027EF6F /* TFLConvenience.swift in Sources */,
+				E7BDBA831BEE42090027EF6F /* TubeInfoTableViewCell.swift in Sources */,
+				E7BDBA871BEE7FCD0027EF6F /* TubeColourHelper.swift in Sources */,
+				E7BDBA791BEE38340027EF6F /* TFLClient.swift in Sources */,
+				E7BDBA7E1BEE3EFA0027EF6F /* LineInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
