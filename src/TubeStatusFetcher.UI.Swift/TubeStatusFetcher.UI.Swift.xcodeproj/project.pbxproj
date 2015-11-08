@@ -12,6 +12,7 @@
 		E71B6EEA1BE7EF8300520507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EE81BE7EF8300520507 /* Main.storyboard */; };
 		E71B6EEC1BE7EF8300520507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EEB1BE7EF8300520507 /* Assets.xcassets */; };
 		E71B6EEF1BE7EF8300520507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B6EED1BE7EF8300520507 /* LaunchScreen.storyboard */; };
+		E75859B11BEE15A9003863D0 /* TFLConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75859B01BEE15A9003863D0 /* TFLConfig.swift */; };
 		E760B21E1BE7F55B0014D61B /* TFLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760B21C1BE7F55B0014D61B /* TFLClient.swift */; };
 		E760B21F1BE7F55B0014D61B /* TFLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E760B21D1BE7F55B0014D61B /* TFLConstants.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		E71B6EEB1BE7EF8300520507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71B6EEE1BE7EF8300520507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71B6EF01BE7EF8300520507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E75859B01BEE15A9003863D0 /* TFLConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TFLConfig.swift; path = Model/TFLConfig.swift; sourceTree = "<group>"; };
 		E760B21C1BE7F55B0014D61B /* TFLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLClient.swift; sourceTree = "<group>"; };
 		E760B21D1BE7F55B0014D61B /* TFLConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFLConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			children = (
 				E760B21C1BE7F55B0014D61B /* TFLClient.swift */,
 				E760B21D1BE7F55B0014D61B /* TFLConstants.swift */,
+				E75859B01BEE15A9003863D0 /* TFLConfig.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				E71B6EE71BE7EF8300520507 /* ViewController.swift in Sources */,
 				E71B6EE51BE7EF8300520507 /* AppDelegate.swift in Sources */,
 				E760B21E1BE7F55B0014D61B /* TFLClient.swift in Sources */,
+				E75859B11BEE15A9003863D0 /* TFLConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
