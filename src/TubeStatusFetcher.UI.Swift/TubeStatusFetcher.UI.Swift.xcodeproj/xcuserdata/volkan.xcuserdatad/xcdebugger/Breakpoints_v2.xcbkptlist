@@ -2,4 +2,70 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TubeStatusFetcher.UI.Swift/Model/TubeColourHelper.swift"
+            timestampString = "468799728.935367"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "TubeColourHelper"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TubeStatusFetcher_UI_Swift.TubeColourHelper.tubeColourDictionary.setter : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "TubeStatusFetcher.UI.Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volkan/Documents/Projects/GitHub/volkanx/tube-status-fetcher/src/TubeStatusFetcher.UI.Swift/TubeStatusFetcher.UI.Swift/Model/TubeColourHelper.swift"
+                  timestampString = "468801886.307992"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TubeStatusFetcher_UI_Swift.TubeColourHelper.tubeColourDictionary.materializeForSet : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;"
+                  moduleName = "TubeStatusFetcher.UI.Swift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/volkan/Documents/Projects/GitHub/volkanx/tube-status-fetcher/src/TubeStatusFetcher.UI.Swift/TubeStatusFetcher.UI.Swift/Model/TubeColourHelper.swift"
+                  timestampString = "468801886.308169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TubeStatusFetcher.UI.Swift/Model/TubeColourHelper.swift"
+            timestampString = "468801885.296452"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
