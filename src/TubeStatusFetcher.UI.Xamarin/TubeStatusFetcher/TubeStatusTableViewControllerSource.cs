@@ -1,48 +1,58 @@
 ﻿
 using System;
+using TubeStatusFetcher.Core;
+
 
 using Foundation;
 using UIKit;
+
 
 namespace TubeStatusFetcher
 {
 	public class TubeStatusTableViewControllerSource : UITableViewSource
 	{
-		public TubeStatusTableViewControllerSource ()
-		{
-		}
+		LineInfo[] _lineInfoList;
 
-		public override nint NumberOfSections (UITableView tableView)
+		public TubeStatusTableViewControllerSource (LineInfo[] lineInfoList)
 		{
-			// TODO: return the actual number of sections
-			return 1;
+			_lineInfoList = lineInfoList;
 		}
 
 		public override nint RowsInSection (UITableView tableview, nint section)
 		{
-			// TODO: return the actual number of items in the section
-			return 1;
+			return _lineInfoList.Length;
 		}
 
 		public override string TitleForHeader (UITableView tableView, nint section)
 		{
-			return "Header";
-		}
-
-		public override string TitleForFooter (UITableView tableView, nint section)
-		{
-			return "Footer";
+			return "Tube Status";
 		}
 
 		public override UITableViewCell GetCell (UITableView tableView, NSIndexPath indexPath)
 		{
 			var cell = tableView.DequeueReusableCell (TubeStatusTableViewControllerCell.Key) as TubeStatusTableViewControllerCell;
-			if (cell == null)
-				cell = new TubeStatusTableViewControllerCell ();
 			
-			// TODO: populate the cell with the appropriate data based on the indexPath
-			cell.DetailTextLabel.Text = "DetailsTextLabel";
-			
+			var lineInfo = _lineInfoList [indexPath.Row];
+
+			var rgb = new RGB(){ R = 137, G = 38, B = 0};
+			try 
+			{
+				rgb = TubeColourHelper.GetRGBColour(lineInfo.Id);	
+			} 
+			catch (ArgumentException ex) 
+			{
+				Console.WriteLine (ex.Message);
+			}
+
+			cell.TubeNameLabel.Text = lineInfo.Name;
+			cell.TubeNameLabel.TextColor = UIColor.White;
+
+			cell.StatusLabel.Text = lineInfo.StatusSeverityDescription;
+			cell.StatusLabel.TextColor = UIColor.White;
+
+			cell.BackgroundColor = new UIColor (red: rgb.R / 255.0f, green: rgb.G / 255.0f, blue: rgb.B / 255.0f, alpha: 1);
+
+
 			return cell;
 		}
 	}

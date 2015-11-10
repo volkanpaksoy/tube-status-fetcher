@@ -112,9 +112,24 @@
     <Compile Include="TubeStatusTableViewControllerController.cs" />
     <Compile Include="TubeStatusTableViewControllerCell.cs" />
     <Compile Include="TubeStatusTableViewControllerSource.cs" />
+    <Compile Include="TubeStatusTableViewControllerController.designer.cs">
+      <DependentUpon>TubeStatusTableViewControllerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TubeStatusTableViewControllerCell.designer.cs">
+      <DependentUpon>TubeStatusTableViewControllerCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Core\" />
+    <Folder Include="data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\data\colours.json">
+      <Link>data\colours.json</Link>
+    </BundleResource>
+    <BundleResource Include="..\data\status.json">
+      <Link>data\status.json</Link>
+    </BundleResource>
   </ItemGroup>
 </Project>

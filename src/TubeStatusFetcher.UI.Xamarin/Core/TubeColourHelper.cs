@@ -13,15 +13,25 @@ namespace TubeStatusFetcher.Core
 
 		static TubeColourHelper()
 		{
-			string json = File.ReadAllText("./data/colours.json");
-			var tubeColors = JArray.Parse(json);
+			string dataFilePath = "data/colours.json";
 
-			foreach (var tubeColor in tubeColors)
+			if (!File.Exists (dataFilePath)) 
 			{
-				_tubeColorRGBDictionary.Add(tubeColor["id"].Value<string>(), new RGB(
-					tubeColor["RGB"]["R"].Value<int>(),
-					tubeColor["RGB"]["G"].Value<int>(),
-					tubeColor["RGB"]["B"].Value<int>()));
+				Console.WriteLine ("Couldn't find colours.json");
+			} 
+			else 
+			{
+				string json = File.ReadAllText(dataFilePath);
+
+				var tubeColors = JArray.Parse(json);
+
+				foreach (var tubeColor in tubeColors)
+				{
+					_tubeColorRGBDictionary.Add(tubeColor["id"].Value<string>(), new RGB(
+						tubeColor["RGB"]["R"].Value<int>(),
+						tubeColor["RGB"]["G"].Value<int>(),
+						tubeColor["RGB"]["B"].Value<int>()));
+				}	
 			}
 		}
 

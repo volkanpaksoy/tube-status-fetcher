@@ -1,32 +1,29 @@
-﻿
-using System;
-
 using Foundation;
+using System;
+using System.CodeDom.Compiler;
 using UIKit;
+
+using TubeStatusFetcher.Core;
+using System.Collections.Generic;
 
 namespace TubeStatusFetcher
 {
-	public class TubeStatusTableViewControllerController : UITableViewController
+	partial class TubeStatusTableViewControllerController : UITableViewController
 	{
-		public TubeStatusTableViewControllerController () : base (UITableViewStyle.Grouped)
+		public TubeStatusTableViewControllerController (IntPtr handle) : base (handle)
 		{
-		}
 
-		public override void DidReceiveMemoryWarning ()
-		{
-			// Releases the view if it doesn't have a superview.
-			base.DidReceiveMemoryWarning ();
-			
-			// Release any cached data, images, etc that aren't in use.
+
 		}
 
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			
-			// Register the TableView's data source
-			TableView.Source = new TubeStatusTableViewControllerSource ();
+
+			var fetcher = new Fetcher ();
+			var lineInfoList = fetcher.GetTubeInfo();
+			TableView.Source = new TubeStatusTableViewControllerSource(lineInfoList.ToArray());
+			TableView.ReloadData();
 		}
 	}
 }
-

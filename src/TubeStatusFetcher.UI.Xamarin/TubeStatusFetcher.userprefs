@@ -1,8 +1,34 @@
 ﻿<Properties StartupItem="TubeStatusFetcher/TubeStatusFetcher.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6s.9.1" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6Plus.9.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TubeStatusFetcher/TubeStatusTableViewControllerSource.cs">
+    <Files>
+      <File FileName="TubeStatusFetcher/TubeStatusTableViewControllerSource.cs" Line="11" Column="2" />
+      <File FileName="TubeStatusFetcher/TubeStatusTableViewControllerCell.cs" Line="20" Column="19" />
+      <File FileName="TubeStatusFetcher/TubeStatusTableViewControllerController.cs" Line="23" Column="24" />
+      <File FileName="Core/TubeColourHelper.cs" Line="42" Column="17" />
+      <File FileName="TubeStatusFetcher/TubeStatusTableViewControllerCell.designer.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="TubeStatusFetcher" expanded="True">
+            <Node name="TubeStatusFetcher" expanded="True">
+              <Node name="TubeStatusFetcher" expanded="True">
+                <Node name="TubeStatusFetcher.TubeStatusTableViewControllerCell" expanded="True">
+                  <Node name="tubeNameLabel" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/volkan/Documents/Projects/GitHub/volkanx/tube-status-fetcher/src/TubeStatusFetcher.UI.Xamarin/Core/TubeColourHelper.cs" line="24" column="1" />
+      <Breakpoint file="/Users/volkan/Documents/Projects/GitHub/volkanx/tube-status-fetcher/src/TubeStatusFetcher.UI.Xamarin/Core/TubeColourHelper.cs" line="16" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>

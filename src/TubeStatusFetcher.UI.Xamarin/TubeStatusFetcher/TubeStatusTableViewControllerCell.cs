@@ -1,20 +1,34 @@
-﻿
-using System;
-
 using Foundation;
+using System;
+using System.CodeDom.Compiler;
 using UIKit;
 
 namespace TubeStatusFetcher
 {
-	public class TubeStatusTableViewControllerCell : UITableViewCell
+	public partial class TubeStatusTableViewControllerCell : UITableViewCell
 	{
-		public static readonly NSString Key = new NSString ("TubeStatusTableViewControllerCell");
-
-		public TubeStatusTableViewControllerCell () : base (UITableViewCellStyle.Value1, Key)
+		public static readonly NSString Key = new NSString ("TubeCell");
+	
+		public UILabel StatusLabel 
 		{
-			// TODO: add subviews to the ContentView, set various colors, etc.
-			TextLabel.Text = "TextLabel";
+			get
+			{
+				return statusLabel;	
+			}
 		}
+
+		public UILabel TubeNameLabel 
+		{
+			get
+			{
+				return tubeNameLabel;	
+			}
+		}
+
+		public TubeStatusTableViewControllerCell (IntPtr handle) : base (handle)
+		{
+			
+		}
+			
 	}
 }
-
