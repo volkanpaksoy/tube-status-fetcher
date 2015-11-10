@@ -10,52 +10,32 @@ import UIKit
 
 class TubeColourHelper: NSObject {
 
-    var tubeColourDictionary : [String : AnyObject]
+    var tubeColourDictionary = [String : RGB]()
     
     
     override init() {
-        tubeColourDictionary = [String : AnyObject]()
         
         let asset = NSDataAsset(name: "Colours", bundle: NSBundle.mainBundle())
         let json = try? NSJSONSerialization.JSONObjectWithData(asset!.data, options: NSJSONReadingOptions.AllowFragments)
         
-        
-        // print (json![0]!["id"] as! String)
-        
-        
-        
         for colour in json! as! [AnyObject] {
             
             let tubeId = colour["id"] as! String
-            print(tubeId)
-            
             let rgb = colour["RGB"]!! as AnyObject
-            
-            /*
-            var tubeColor = RGB(
+            let tubeColor = RGB(
                 R: rgb["R"]!!.doubleValue,
-                G: "0".doubleValue,
-                B: "0".doubleValue)
+                G: rgb["G"]!!.doubleValue,
+                B: rgb["B"]!!.doubleValue)
             
-
-            print (tubeColor)
-            */
-
-            //tubeColourDictionary.append()
-            
-            
+            tubeColourDictionary[tubeId] = tubeColor
         }
-        
-
-        
     }
     
-    func loadColourData() {
+    func getTubeColor(tubeId : String) -> UIColor {
         
-       
+        let rgb : RGB = tubeColourDictionary[tubeId]!
         
-        
-        
+        return UIColor(red: CGFloat(rgb.R/255.0), green: CGFloat(rgb.G/255.0), blue: CGFloat(rgb.B/255.0), alpha: 1.0)
     }
     
 }
