@@ -11,35 +11,10 @@ import UIKit
 class TubeStatusViewController: UITableViewController {
 
     var lineInfoList = [LineInfo]()
-<<<<<<< HEAD
     var colourHelper = TubeColourHelper()
-    
-=======
->>>>>>> origin/master
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
-        
-    }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
-        /*
-        let line = LineInfo(Id: "bakerloo", Name: "Bakerloo", LineColour: RGB(R: 137/255, G: 78/255, B: 36/255), StatusSeverity: 10, StatusSeverityDescription: "Good Service", Reason: "" )
-        
-        lineInfoList.append(line)
-        */
-        
-<<<<<<< HEAD
-               
-=======
-        var t = TubeColourHelper()
-        t.loadColourData()
->>>>>>> origin/master
-
         
         TFLClient.sharedInstance().getTubeStatus { lineStatus, error in
             
@@ -51,12 +26,7 @@ class TubeStatusViewController: UITableViewController {
             } else {
                 print(error)
             }
-            
         }
-
-       
-
-        // tableView!.reloadData()
     }
 
 
@@ -68,25 +38,8 @@ class TubeStatusViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("TubeInfoCell", forIndexPath: indexPath) as! TubeInfoTableViewCell
         let lineStatus = lineInfoList[indexPath.row]
         
-<<<<<<< HEAD
-        
         cell.backgroundColor = colourHelper.getTubeColor(lineStatus.Id)
-        print (cell.backgroundColor)
         
-        
-        /*
-=======
->>>>>>> origin/master
-        cell.backgroundColor = UIColor(
-            red: CGFloat(lineStatus.LineColour.R),
-            green: CGFloat(lineStatus.LineColour.G),
-            blue: CGFloat(lineStatus.LineColour.B),
-            alpha: CGFloat(1.0))
-<<<<<<< HEAD
-        */
-=======
->>>>>>> origin/master
-
         cell.lineName?.text = lineStatus.Name
         cell.lineName?.textColor = UIColor.whiteColor()
         
@@ -96,7 +49,6 @@ class TubeStatusViewController: UITableViewController {
         cell.reason?.text = lineStatus.Reason
         cell.reason?.textColor = UIColor.whiteColor()
 
-        
         return cell
     }
     
