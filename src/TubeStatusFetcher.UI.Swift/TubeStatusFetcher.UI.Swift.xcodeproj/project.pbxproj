@@ -20,10 +20,8 @@
 		E7BDBA831BEE42090027EF6F /* TubeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA821BEE42090027EF6F /* TubeInfoTableViewCell.swift */; };
 		E7BDBA851BEE635B0027EF6F /* TFLConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA841BEE635B0027EF6F /* TFLConvenience.swift */; };
 		E7BDBA871BEE7FCD0027EF6F /* TubeColourHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BDBA861BEE7FCD0027EF6F /* TubeColourHelper.swift */; };
-<<<<<<< HEAD
-=======
 		E7BDBA8D1BEE87A30027EF6F /* colour.json in Resources */ = {isa = PBXBuildFile; fileRef = E7BDBA8C1BEE87A30027EF6F /* colour.json */; };
->>>>>>> origin/master
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +40,8 @@
 		E7BDBA821BEE42090027EF6F /* TubeInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TubeInfoTableViewCell.swift; path = View/TubeInfoTableViewCell.swift; sourceTree = "<group>"; };
 		E7BDBA841BEE635B0027EF6F /* TFLConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TFLConvenience.swift; path = Model/TFLConvenience.swift; sourceTree = "<group>"; };
 		E7BDBA861BEE7FCD0027EF6F /* TubeColourHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TubeColourHelper.swift; path = Model/TubeColourHelper.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		E7BDBA8C1BEE87A30027EF6F /* colour.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colour.json; sourceTree = "<group>"; };
->>>>>>> origin/master
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
