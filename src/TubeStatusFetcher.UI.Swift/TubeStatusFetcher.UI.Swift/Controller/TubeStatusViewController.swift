@@ -11,8 +11,11 @@ import UIKit
 class TubeStatusViewController: UITableViewController {
 
     var lineInfoList = [LineInfo]()
+<<<<<<< HEAD
     var colourHelper = TubeColourHelper()
     
+=======
+>>>>>>> origin/master
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +33,12 @@ class TubeStatusViewController: UITableViewController {
         lineInfoList.append(line)
         */
         
+<<<<<<< HEAD
                
+=======
+        var t = TubeColourHelper()
+        t.loadColourData()
+>>>>>>> origin/master
 
         
         TFLClient.sharedInstance().getTubeStatus { lineStatus, error in
@@ -60,18 +68,24 @@ class TubeStatusViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("TubeInfoCell", forIndexPath: indexPath) as! TubeInfoTableViewCell
         let lineStatus = lineInfoList[indexPath.row]
         
+<<<<<<< HEAD
         
         cell.backgroundColor = colourHelper.getTubeColor(lineStatus.Id)
         print (cell.backgroundColor)
         
         
         /*
+=======
+>>>>>>> origin/master
         cell.backgroundColor = UIColor(
             red: CGFloat(lineStatus.LineColour.R),
             green: CGFloat(lineStatus.LineColour.G),
             blue: CGFloat(lineStatus.LineColour.B),
             alpha: CGFloat(1.0))
+<<<<<<< HEAD
         */
+=======
+>>>>>>> origin/master
 
         cell.lineName?.text = lineStatus.Name
         cell.lineName?.textColor = UIColor.whiteColor()

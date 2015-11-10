@@ -10,6 +10,7 @@ import UIKit
 
 class TubeColourHelper: NSObject {
 
+<<<<<<< HEAD
     var tubeColourDictionary = [String : RGB]()
     
     
@@ -36,6 +37,23 @@ class TubeColourHelper: NSObject {
         let rgb : RGB = tubeColourDictionary[tubeId]!
         
         return UIColor(red: CGFloat(rgb.R/255.0), green: CGFloat(rgb.G/255.0), blue: CGFloat(rgb.B/255.0), alpha: 1.0)
+=======
+    func loadColourData() {
+        
+        if let filePath = NSBundle.mainBundle().pathForResource("Assets/colour.json", ofType: "json"), data = NSData(contentsOfFile: filePath) {
+            print (filePath)
+            
+            do {
+                let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
+                print(json)
+            }
+            catch {
+                
+            }
+        }
+        
+        
+>>>>>>> origin/master
     }
     
 }

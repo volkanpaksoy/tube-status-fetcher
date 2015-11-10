@@ -9,6 +9,7 @@ namespace TubeStatusFetcher.UI.Console
         {
             var fetcher = new Fetcher();
             var viewer = new ConsoleViewer();
+
             bool exit = false;
 
             viewer.DisplayTubeStatus(fetcher.GetTubeInfo());

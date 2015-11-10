@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TubeStatusFetcher.Core
 {
+    // Currently unused - can be deleted completely if CMYK is never used
     public class LineColour
     {
         public RGB RGB { get; set; }
